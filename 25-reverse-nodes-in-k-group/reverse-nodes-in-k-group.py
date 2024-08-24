@@ -27,8 +27,8 @@ class Solution:
             currentnode=frontnode
             count+=1
         
-        if currentnode is not None:
-            head.next = self.reverseKGroup(currentnode, k)
+        if frontnode is not None:
+            head.next = self.reverseKGroup(frontnode, k)
         return prev
 
         
