@@ -1,20 +1,20 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        ans = [-1, -1]  # Initialize the result with [-1, -1] for no occurrences
+        ans = [-1, -1]  
         n = len(nums)
         i = 0
 
-        # Find the first occurrence of the target
+       
         while i < n:
             if nums[i] == target:
-                ans[0] = i  # Store the first occurrence
+                ans[0] = i  
                 break
             i += 1
         
-        # Now find the last occurrence of the target
+       
         while i < n:
             if nums[i] == target:
-                ans[1] = i  # Keep updating to the last occurrence
+                ans[1] = i  
             i += 1
         
         return ans
