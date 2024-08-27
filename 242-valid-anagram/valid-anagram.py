@@ -12,7 +12,7 @@ class Solution:
         for num in t:
             if num in seen:
                 seen[num]-=1
-    
+
         for num in seen:
             if seen[num] != 0:
                 return False
