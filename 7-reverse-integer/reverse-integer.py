@@ -13,7 +13,7 @@ class Solution:
             l+=1
             r-=1
         reversed_number = int(''.join(convert))
-        if reversed_number < -2147483648 or reversed_number > 2147483647:
+        if reversed_number < -2 ** 31  or reversed_number > 2 ** 31-1:
             return 0
         
         return reversed_number
